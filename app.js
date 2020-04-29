@@ -52,11 +52,7 @@ function render() {
         author.innerHTML = myLibrary[i].author;
         pages.innerHTML = myLibrary[i].pages;
         read.innerHTML = myLibrary[i].read;
-        delButton.innerHTML = <button onclick = 'removeBook()' class='delete'>Delete</button>;
-        readButton.innerHTML = <button onclick='changeReadStatus()'>Read</button>;
+        delButton.innerHTML = "<button class='delButton'>Delete</button>";
+        readButton.innerHTML = "<button class='readButton'>Read</button>";
     };
 };
-
-book = new Book ('The Hobbit', 'J.R.R. Tolkien', 298, true);
-myLibrary.push(book);
-render(book);
